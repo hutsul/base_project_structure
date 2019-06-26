@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "iconFont";
+  src: url('../fonts/icon-font/iconFont.eot');
+  src: url('../fonts/icon-font/iconFont.eot?#iefix') format('eot'),
+  url('../fonts/icon-font/iconFont.woff2') format('woff2'),
+  url('../fonts/icon-font/iconFont.woff') format('woff'),
+  url('../fonts/icon-font/iconFont.ttf') format('truetype'),
+  url('../fonts/icon-font/iconFont.svg#iconFont') format('svg');
+}
+
+@mixin ic-styles {
+  font-family: "iconFont";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  // speak: none; // only necessary if not using the private unicode range (firstGlyph option) sfdfgasdfasdf
+  text-decoration: none;
+  text-transform: none;
+}
+
+%ic {
+  @include ic-styles;
+}
+
+@function ic-char($filename) {
+  $char: "";
+
+  @if $filename == benefit-item-1 {
+	$char: "\E001";
+  }
+  @if $filename == benefit-item-2 {
+	$char: "\E002";
+  }
+  @if $filename == benefit-item-3 {
+	$char: "\E003";
+  }
+  @if $filename == benefit-item-4 {
+	$char: "\E004";
+  }
+  @if $filename == benefit-item-5 {
+	$char: "\E005";
+  }
+  @if $filename == benefit-item-6 {
+	$char: "\E006";
+  }
+  @if $filename == benefit-list-1 {
+	$char: "\E007";
+  }
+  @if $filename == benefit-list-2 {
+	$char: "\E008";
+  }
+  @if $filename == benefit-list-3 {
+	$char: "\E009";
+  }
+  @if $filename == benefit-list-4 {
+	$char: "\E00A";
+  }
+  @if $filename == benefit-list-5 {
+	$char: "\E00B";
+  }
+  @if $filename == cart {
+	$char: "\E00C";
+  }
+  @if $filename == close {
+	$char: "\E00D";
+  }
+  @if $filename == mob-menu {
+	$char: "\E00E";
+  }
+  @if $filename == search {
+	$char: "\E00F";
+  }
+  @if $filename == select-arrow {
+	$char: "\E010";
+  }
+  @if $filename == slick-arrow-next {
+	$char: "\E011";
+  }
+  @if $filename == slick-arrow-prev {
+	$char: "\E012";
+  }
+  @if $filename == small-arr-left {
+	$char: "\E013";
+  }
+  @if $filename == small-arr-right {
+	$char: "\E014";
+  }
+
+  @return $char;
+}
+
+@mixin ic($filename, $insert: before, $extend: true) {
+  &:#{$insert} {
+	@if $extend {
+	  @extend %ic;
+	} @else {
+	  @include ic-styles;
+	}
+	content: ic-char($filename);
+  }
+}
+
+.ic-benefit-item-1 {
+  @include ic(benefit-item-1);
+}
+
+.ic-benefit-item-2 {
+  @include ic(benefit-item-2);
+}
+
+.ic-benefit-item-3 {
+  @include ic(benefit-item-3);
+}
+
+.ic-benefit-item-4 {
+  @include ic(benefit-item-4);
+}
+
+.ic-benefit-item-5 {
+  @include ic(benefit-item-5);
+}
+
+.ic-benefit-item-6 {
+  @include ic(benefit-item-6);
+}
+
+.ic-benefit-list-1 {
+  @include ic(benefit-list-1);
+}
+
+.ic-benefit-list-2 {
+  @include ic(benefit-list-2);
+}
+
+.ic-benefit-list-3 {
+  @include ic(benefit-list-3);
+}
+
+.ic-benefit-list-4 {
+  @include ic(benefit-list-4);
+}
+
+.ic-benefit-list-5 {
+  @include ic(benefit-list-5);
+}
+
+.ic-cart {
+  @include ic(cart);
+}
+
+.ic-close {
+  @include ic(close);
+}
+
+.ic-mob-menu {
+  @include ic(mob-menu);
+}
+
+.ic-search {
+  @include ic(search);
+}
+
+.ic-select-arrow {
+  @include ic(select-arrow);
+}
+
+.ic-slick-arrow-next {
+  @include ic(slick-arrow-next);
+}
+
+.ic-slick-arrow-prev {
+  @include ic(slick-arrow-prev);
+}
+
+.ic-small-arr-left {
+  @include ic(small-arr-left);
+}
+
+.ic-small-arr-right {
+  @include ic(small-arr-right);
+}

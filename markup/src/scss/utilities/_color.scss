@@ -1,0 +1,137 @@
+@import './colors/project_default';
+
+$red-1: #E21E1E;
+
+$green-1: #1E9437;
+$green-2: #9ACFA5;
+
+$blue-1: #68A697;
+
+$grey-1: #4f5362;
+$grey-2: #222328;
+$grey-3: #a8acb9;
+$grey-4: #4f5362;
+$grey-5: #454553;
+$grey-6: #e5e5e5;
+$grey-7: #EAEAEA;
+$grey-8: #F6F6F6;
+$grey-9: #E9E9E9;
+$grey-10: #DDDDDD;
+$grey-11: #959595;
+$grey-12: #CDCDCD;
+$grey-13: #FAFAFA;
+$grey-14: #e1e1e1;
+
+// Benefits Slide ---------------
+$benefits-slide-bg: $white;
+$benefits-slide-container-bg: $grey-13;
+$benefits-slide-caption: $green-1;
+$benefits-slide-caption-text: $white;
+$benefits-slide-list-marker: $green-2;
+$benefits-slide-list-text: $grey-11;
+$benefits-slide-shadow: rgba($black, .13);
+$benefits-slide-marker: $grey-12;
+$benefits-slide-marker-active: $green-1;
+$benefits-slide-controls: $grey-12;
+// -----------------------
+
+// Checkers ---------------
+$checker-text: $grey-4;
+$checker-bg: $grey-8;
+$checker-bg-active: $green-1;
+// -----------------------
+
+// Input Holder --------------
+$input-label: $grey-4;
+$input-text: $grey-4;
+$input-text-error: $red-1;
+$input-placeholder: $grey-3;
+$input-border: $grey-6;
+$input-border-active: $green-1;
+$input-border-error: $red-1;
+$input-bg: $grey-8;
+// ----------------------
+
+// Tab --------------
+$tab-amount-bg: $grey-2;
+$tab-amount-text: $white;
+$tab-pay-label: $grey-4;
+$tab-pay-border: $grey-6;
+$tab-footer-border: $grey-9;
+// ----------------------
+
+// Counter --------------
+$counter-border: $grey-7;
+$counter-shadow: rgba($black, .3);
+// ----------------------
+
+// Cart ------------------
+$cart-holder: rgba($black, .6);
+$cart-bg: $white;
+$cart-step: darken($grey-6, 25%);
+$cart-current-tab-border: $grey-7;
+$cart-current-tab-progress: $green-1;
+$cart-current-tab-name: $grey-1;
+$cart-table-capture: darken($grey-6, 25%);
+
+$cart-item-caption: $grey-4;
+$cart-item-type: $grey-3;
+$cart-item-box: $green-1;
+$cart-payment-bg: $blue-1;
+
+$cart-done-border: $grey-10;
+$cart-done-text: $grey-1;
+
+$cart-empty: $grey-14;
+// -----------------------
+
+// Header ---------------
+$header-card-count-bg: $red-1;
+$header-shadow: rgba($black, .15);
+$nav-item: rgba($white, .5);
+$header-item: $grey-5;
+$nav-item-fixed: rgba($grey-5, .5);
+$nav-item-fixed-active: $green-1;
+$mobile-menu-bg: $grey-2;
+// -----------------------
+
+// Button ---------------
+$btn-green: $green-1;
+$btn-green-active: $grey-2;
+$btn-shadow: rgba($black, .53);
+// -----------------------
+
+// Benefit List ---------------
+$benefit-border: $white;
+$benefit-bg: rgba($white, .4);
+$benefit-text: $white;
+// -----------------------
+
+// Section ---------------
+$section-title-white: $white;
+$section-title-black: $grey-1;
+$section-sub-title: $grey-2;
+// -----------------------
+
+// Product Item ---------------
+$product-item-shadow: rgba($black, .6);
+$product-item-text: $grey-2;
+// -----------------------
+
+// Benefit ---------------
+$benefit-border: rgba($white, .2);
+// -----------------------
+
+// Gallery ---------------
+$benefit-hover: rgba($green-1, .4);
+
+// -----------------------
+
+// Footer ---------------
+$footer-bg: rgba($grey-1, .2);
+$footer-title: $grey-3;
+$footer-text: $grey-4;
+
+// -----------------------
+
+

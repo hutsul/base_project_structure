@@ -1,0 +1,9 @@
+@import '../utilities/color';
+
+// Tables colors - transfer into 'utilities/colors.scss' file for project
+$table-border: $base-border;
+$table-bg: lighten(color('default', 'light-gray'), 20%);
+$table-bg-hover: lighten(color('default', 'light-gray'), 10%);
+$table-caption: color('default', 'gray');
+// ----------------------
+

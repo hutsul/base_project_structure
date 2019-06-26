@@ -1,0 +1,17 @@
+@import '../utilities/variables';
+
+html {
+  position: relative;
+  height: 100%;
+
+  body {
+    min-height: 100%;
+  }
+}
+
+// General classes for project
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $white;
+}

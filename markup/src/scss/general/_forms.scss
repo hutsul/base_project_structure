@@ -1,0 +1,41 @@
+@import '../utilities/color';
+@import '../utilities/fonts_var';
+
+// Form elements style
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='password'],
+input[type='search'],
+textarea {
+  outline: none;
+  text-align: left;
+
+  &::-webkit-input-placeholder {
+    //color: $form-placeholder;
+    font: {
+      size: 16px;
+    }
+  }
+
+  &::-moz-placeholder {
+    //color: $form-placeholder;
+    font: {
+      size: 16px;
+    }
+  }
+
+  &:-ms-input-placeholder {
+    //color: $form-placeholder;
+    font: {
+      size: 16px;
+    }
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+
+

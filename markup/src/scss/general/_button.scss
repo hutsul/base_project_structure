@@ -1,0 +1,44 @@
+@import '../utilities/color';
+@import '../utilities/fonts_var';
+
+// ----------------------
+
+.btn {
+  display: inline-block;
+  padding: 0 30px;
+  box-shadow: 0 20px 40px $btn-shadow;
+  font: {
+    size: 14px;
+    weight: 700;
+  }
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover,
+  &:focus,
+  &:active {
+    overflow: hidden;
+  }
+
+  &.big {
+    height: 55px;
+    line-height: 55px;
+  }
+
+  &.small {
+    height: 45px;
+    line-height: 45px;
+  }
+  
+  &.green {
+    background-color: $btn-green;
+    color: $white;
+  }
+
+  &.bordered {
+    border-radius: 30px;
+  }
+}
+
+

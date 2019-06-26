@@ -1,0 +1,20 @@
+@import '../utilities/fonts_var';
+@import '../utilities/mixins';
+
+// Typography style
+
+html {
+  font-size: $base-font-size;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+
+body {
+  @include default-font-size($size-body);
+  font: {
+    family: $base-font-family;
+    weight: 400;
+  };
+}

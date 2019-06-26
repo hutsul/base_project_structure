@@ -1,0 +1,21 @@
+
+  "name": "InstaglamCMS",
+  "description": "CSS Template for new project",
+  "authors": [
+    "Anton Nizhegorodov"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/js/libs",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "respond": "^1.4.2",
+    "html5shiv": "^3.7.3"
+  }
+}
+
